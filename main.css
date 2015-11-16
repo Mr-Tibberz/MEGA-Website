@@ -1,0 +1,229 @@
+/* Color List */
+/* #111     Black */
+/* #bd2121  Red */
+/* #d88b28  Orange */
+/* #44a4ff  Light Blue */
+/* #0084ff  Dark Blue */
+/* #b100bc  Purple */
+/* #f0f0f0  White*/
+
+
+/* ------------------------ Header -------------------------- */
+
+body{
+    margin:0 auto;
+    padding:0;
+    font-family: "Arial", sans-serif;
+    background:#bd2121;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width:1024px;
+}
+div.header_logo{
+    background:#111 url("imgs/mega.png") no-repeat; 
+    margin:0 auto;
+    padding:0;
+    height:162px;
+    color: aqua;
+    
+}
+nav.mainMenu{
+    display: block;
+    background:#bd2121;
+    height:42px;
+    padding:4px 0 14px 0;
+}
+nav.mainMenu ul{
+    padding: 0;
+    margin:0 0 0 125px;
+    list-style-type: none;
+}
+nav.mainMenu ul li.first{
+    background: url(imgs/hex_Main.png);
+    transform: scaleY(-1);
+    display: inline-block;
+    text-align: center;
+    margin: 0 -29px;
+    line-height: 52px;
+    width: 251px;
+    height: 52px;
+    padding: 0;
+}
+nav.mainMenu ul li.second{
+    background: url(imgs/hex_Main.png);
+    display: inline-block;
+    text-align: center;
+    margin: 0 -29px;
+    line-height: 52px;
+    width: 251px;
+    height: 52px;
+    padding: 0;
+}
+nav.mainMenu ul li.third{
+    background: url(imgs/hex_log.png);
+    float: right;
+    display: inline-block;
+    text-align: center;
+    margin: 0 0 0 -29px;
+    line-height: 52px;
+    width: 304px;
+    height: 52px;
+    padding: 0;
+}
+
+
+nav.mainMenu ul li.first:hover{
+    background: url(imgs/hex_Main_hover.png);
+}
+nav.mainMenu ul li.second:hover{
+    background: url(imgs/hex_Main_hover.png);   
+}
+nav.mainMenu ul li.third:hover{
+    background: url(imgs/hex_log_hover.png);
+}
+
+
+
+nav.mainMenu ul li.first a{
+    display: inline-block;
+    transform: scaleY(-1);
+    text-decoration:none;
+    padding: 0;
+    margin: 0 31px;
+    width:134px;
+    height:54px;
+    line-height:54px;
+    color: #f0f0f0;
+}
+nav.mainMenu ul li.second a{
+    display: inline-block;
+    text-decoration:none;
+    padding: 0;
+    margin: 0 31px;
+    width:134px;
+    height:54px;
+    line-height:54px;
+    color: #f0f0f0;
+}
+nav.mainMenu ul li.third a{
+    display: inline-block;
+    text-decoration:none;
+    padding: 0;
+    margin: 0 31px;
+    width:134px;
+    height:54px;
+    line-height:54px;
+    color: #f0f0f0;
+}
+
+nav.mainMenu ul li.first:hover a{
+    color:#111;
+}
+nav.mainMenu ul li.second:hover a{
+    color:#111;  
+}
+nav.mainMenu ul li.third:hover a{
+    color:#111;
+}
+
+/* ------------------------------ Body ------------------------- */
+body{
+    height:100%;
+}
+div.home_content{
+    background:#bd2121;
+    height:100%;
+    width:1024px;
+    padding:0;
+    margin:0 auto;
+    
+}
+body #canvas{
+    margin: 0;
+    padding: 0;
+    background: lime;
+    display: block;
+}
+body div.home_content div.other_content{
+    display: block;
+    height: 388px;
+    text-decoration: none;
+}
+
+body div.home_content div.other_content a{
+    display: inline-block;
+    background:#111;
+    height: 188px;
+    width:510px;
+    margin-top:4px;    
+    text-align:center;
+    float: left;
+}
+
+body div.home_content div.other_content .left_col{
+    margin-right: 4px;
+}
+body div.home_content div.other_content a div h1{
+    position: absolute;
+    display: block;
+    width:510px;
+    font-size:60px;
+    color: #d88b28;
+    margin-top: 25px;
+    
+}
+body div.home_content div.other_content a div p{
+    position: absolute;
+    display: block;
+    width:350px;
+    margin:100px 0 0 75px;
+    font-size:24px;
+    color:#d88b28;
+    
+}
+
+/* ----------------------------- Footer ----------------*/
+div.footer{
+    background:#111;
+    height:100px;
+    text-align: center;
+}
+div.footer div{
+    /* position ferris logo */
+    background: url(imgs/ferris.png);
+    float:left;
+    margin:12px 15px 0 20px;
+    width:58px;
+    height:58px;
+}
+div.footer ul{
+    float:left;
+    padding: 0;
+    list-style-type: none;
+    font-size: 12px;
+    margin:18px 0 0 0;
+}
+div.footer ul li{
+    margin: 5px 0; 
+    padding: 0;
+}
+div.footer ul li a{
+    color: #bd2121;
+}
+div.footer a.contact{
+    margin: 36px 30px;
+    font-size: 12px;
+    color: #bd2121;
+    float:right;
+}
+div.footer p{
+    display: inline-block;
+    margin:36px auto;
+    color: #f0f0f0;
+    
+    font-size: 12px;
+}
