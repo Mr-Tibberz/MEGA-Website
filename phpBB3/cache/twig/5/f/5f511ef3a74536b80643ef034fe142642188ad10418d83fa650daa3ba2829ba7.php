@@ -306,8 +306,8 @@ class __TwigTemplate_5f511ef3a74536b80643ef034fe142642188ad10418d83fa650daa3ba28
 \t<div id=\"page-header\" class=\"page-width\">
 \t\t<div class=\"headerbar\" role=\"banner\">
 \t\t\t<div class=\"inner\">
-
-\t\t\t<div id=\"site-description\">
+            
+\t\t\t<!--<div id=\"site-description\">
 \t\t\t\t<a id=\"logo\" class=\"logo\" href=\"";
         // line 85
         if ((isset($context["U_SITE_HOME"]) ? $context["U_SITE_HOME"] : null)) {
@@ -338,8 +338,8 @@ class __TwigTemplate_5f511ef3a74536b80643ef034fe142642188ad10418d83fa650daa3ba28
         // line 88
         echo $this->env->getExtension('phpbb')->lang("SKIP");
         echo "</a></p>
-\t\t\t</div>
-
+\t\t\t</div> -->
+            
 \t\t\t";
         // line 91
         // line 92
@@ -349,14 +349,15 @@ class __TwigTemplate_5f511ef3a74536b80643ef034fe142642188ad10418d83fa650daa3ba28
             echo "\t\t\t";
             ob_start();
             // line 94
-            echo "\t\t\t<div id=\"search-box\" class=\"search-box search-header\" role=\"search\">
+            echo "                <!--
+\t\t\t<div id=\"search-box\" class=\"search-box search-header\" role=\"search\">
 \t\t\t\t<form action=\"";
-            // line 95
+            // line 96
             echo (isset($context["U_SEARCH"]) ? $context["U_SEARCH"] : null);
             echo "\" method=\"get\" id=\"search\">
 \t\t\t\t<fieldset>
 \t\t\t\t\t<input name=\"keywords\" id=\"keywords\" type=\"search\" maxlength=\"128\" title=\"";
-            // line 97
+            // line 98
             echo $this->env->getExtension('phpbb')->lang("SEARCH_KEYWORDS");
             echo "\" class=\"inputbox search tiny\" size=\"20\" value=\"";
             echo (isset($context["SEARCH_WORDS"]) ? $context["SEARCH_WORDS"] : null);
@@ -364,13 +365,13 @@ class __TwigTemplate_5f511ef3a74536b80643ef034fe142642188ad10418d83fa650daa3ba28
             echo $this->env->getExtension('phpbb')->lang("SEARCH_MINI");
             echo "\" />
 \t\t\t\t\t<button class=\"button icon-button search-icon\" type=\"submit\" title=\"";
-            // line 98
+            // line 99
             echo $this->env->getExtension('phpbb')->lang("SEARCH");
             echo "\">";
             echo $this->env->getExtension('phpbb')->lang("SEARCH");
             echo "</button>
 \t\t\t\t\t<a href=\"";
-            // line 99
+            // line 100
             echo (isset($context["U_SEARCH"]) ? $context["U_SEARCH"] : null);
             echo "\" class=\"button icon-button search-adv-icon\" title=\"";
             echo $this->env->getExtension('phpbb')->lang("SEARCH_ADV");
@@ -378,42 +379,43 @@ class __TwigTemplate_5f511ef3a74536b80643ef034fe142642188ad10418d83fa650daa3ba28
             echo $this->env->getExtension('phpbb')->lang("SEARCH_ADV");
             echo "</a>
 \t\t\t\t\t";
-            // line 100
+            // line 101
             echo (isset($context["S_SEARCH_HIDDEN_FIELDS"]) ? $context["S_SEARCH_HIDDEN_FIELDS"] : null);
             echo "
 \t\t\t\t</fieldset>
 \t\t\t\t</form>
 \t\t\t</div>
+-->
 \t\t\t";
             $value = ('' === $value = ob_get_clean()) ? '' : new \Twig_Markup($value, $this->env->getCharset());
             $context['definition']->set('SEARCH_BOX', $value);
-            // line 105
+            // line 107
             echo "\t\t\t";
             if (($this->getAttribute((isset($context["definition"]) ? $context["definition"] : null), "SEARCH_IN_NAVBAR", array()) == 0)) {
                 echo $this->getAttribute((isset($context["definition"]) ? $context["definition"] : null), "SEARCH_BOX", array());
             }
-            // line 106
+            // line 108
             echo "\t\t\t";
         }
-        // line 107
+        // line 109
         echo "
 \t\t\t</div>
 \t\t</div>
 
 ";
-        // line 111
+        // line 113
         if (($this->getAttribute((isset($context["definition"]) ? $context["definition"] : null), "WRAP_HEADER", array()) == 2)) {
-            // line 112
+            // line 114
             echo "</div>
 <div id=\"wrap\" class=\"page-width\">
 <div>
 ";
         }
-        // line 116
+        // line 118
         echo "
 \t\t";
-        // line 117
-        // line 118
+        // line 119
+        // line 120
         echo "\t\t";
         $location = "navbar_header.html";
         $namespace = false;
@@ -422,40 +424,40 @@ class __TwigTemplate_5f511ef3a74536b80643ef034fe142642188ad10418d83fa650daa3ba28
             $previous_look_up_order = $this->env->getNamespaceLookUpOrder();
             $this->env->setNamespaceLookUpOrder(array($namespace, '__main__'));
         }
-        $this->loadTemplate("navbar_header.html", "overall_header.html", 118)->display($context);
+        $this->loadTemplate("navbar_header.html", "overall_header.html", 120)->display($context);
         if ($namespace) {
             $this->env->setNamespaceLookUpOrder($previous_look_up_order);
         }
-        // line 119
+        // line 121
         echo "\t</div>
 
 ";
-        // line 121
+        // line 123
         if (($this->getAttribute((isset($context["definition"]) ? $context["definition"] : null), "WRAP_HEADER", array()) == 0)) {
-            // line 122
+            // line 124
             echo "<div id=\"wrap\" class=\"page-width\">
 ";
         }
-        // line 124
+        // line 126
         echo "
 \t";
-        // line 125
-        // line 126
+        // line 127
+        // line 128
         echo "
 \t<a id=\"start_here\" class=\"anchor\"></a>
 \t<div id=\"page-body\" role=\"main\">
 \t\t";
-        // line 129
+        // line 131
         echo $this->getAttribute((isset($context["definition"]) ? $context["definition"] : null), "BREADCRUMBS", array());
         echo "
 \t\t";
-        // line 130
+        // line 132
         if ((((isset($context["S_BOARD_DISABLED"]) ? $context["S_BOARD_DISABLED"] : null) && (isset($context["S_USER_LOGGED_IN"]) ? $context["S_USER_LOGGED_IN"] : null)) && ((isset($context["U_MCP"]) ? $context["U_MCP"] : null) || (isset($context["U_ACP"]) ? $context["U_ACP"] : null)))) {
-            // line 131
+            // line 133
             echo "\t\t<div id=\"information\" class=\"rules\">
 \t\t\t<div class=\"inner\">
 \t\t\t\t<strong>";
-            // line 133
+            // line 135
             echo $this->env->getExtension('phpbb')->lang("INFORMATION");
             echo $this->env->getExtension('phpbb')->lang("COLON");
             echo "</strong> ";
@@ -465,10 +467,10 @@ class __TwigTemplate_5f511ef3a74536b80643ef034fe142642188ad10418d83fa650daa3ba28
 \t\t</div>
 \t\t";
         }
-        // line 137
+        // line 139
         echo "
 \t\t";
-        // line 138
+        // line 140
     }
 
     public function getTemplateName()
@@ -483,6 +485,6 @@ class __TwigTemplate_5f511ef3a74536b80643ef034fe142642188ad10418d83fa650daa3ba28
 
     public function getDebugInfo()
     {
-        return array (  472 => 138,  469 => 137,  459 => 133,  455 => 131,  453 => 130,  449 => 129,  444 => 126,  443 => 125,  440 => 124,  436 => 122,  434 => 121,  430 => 119,  417 => 118,  416 => 117,  413 => 116,  407 => 112,  405 => 111,  399 => 107,  396 => 106,  391 => 105,  382 => 100,  374 => 99,  368 => 98,  360 => 97,  355 => 95,  352 => 94,  349 => 93,  346 => 92,  345 => 91,  339 => 88,  335 => 87,  331 => 86,  313 => 85,  305 => 79,  301 => 77,  299 => 76,  296 => 75,  295 => 74,  291 => 72,  279 => 71,  268 => 69,  264 => 67,  263 => 66,  258 => 64,  255 => 63,  254 => 62,  246 => 59,  242 => 57,  234 => 55,  232 => 54,  229 => 53,  221 => 51,  219 => 50,  214 => 48,  208 => 46,  202 => 44,  184 => 28,  182 => 27,  179 => 26,  173 => 24,  171 => 23,  168 => 22,  165 => 20,  148 => 19,  133 => 18,  122 => 17,  111 => 16,  100 => 15,  89 => 14,  78 => 13,  76 => 12,  73 => 11,  61 => 10,  36 => 8,  32 => 7,  22 => 2,  19 => 1,);
+        return array (  474 => 140,  471 => 139,  461 => 135,  457 => 133,  455 => 132,  451 => 131,  446 => 128,  445 => 127,  442 => 126,  438 => 124,  436 => 123,  432 => 121,  419 => 120,  418 => 119,  415 => 118,  409 => 114,  407 => 113,  401 => 109,  398 => 108,  393 => 107,  383 => 101,  375 => 100,  369 => 99,  361 => 98,  356 => 96,  352 => 94,  349 => 93,  346 => 92,  345 => 91,  339 => 88,  335 => 87,  331 => 86,  313 => 85,  305 => 79,  301 => 77,  299 => 76,  296 => 75,  295 => 74,  291 => 72,  279 => 71,  268 => 69,  264 => 67,  263 => 66,  258 => 64,  255 => 63,  254 => 62,  246 => 59,  242 => 57,  234 => 55,  232 => 54,  229 => 53,  221 => 51,  219 => 50,  214 => 48,  208 => 46,  202 => 44,  184 => 28,  182 => 27,  179 => 26,  173 => 24,  171 => 23,  168 => 22,  165 => 20,  148 => 19,  133 => 18,  122 => 17,  111 => 16,  100 => 15,  89 => 14,  78 => 13,  76 => 12,  73 => 11,  61 => 10,  36 => 8,  32 => 7,  22 => 2,  19 => 1,);
     }
 }

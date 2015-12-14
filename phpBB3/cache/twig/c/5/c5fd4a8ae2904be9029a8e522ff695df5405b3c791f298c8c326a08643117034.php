@@ -29,18 +29,17 @@ class __TwigTemplate_c5fd4a8ae2904be9029a8e522ff695df5405b3c791f298c8c326a086431
 </head>
 
 <hgroup>
-    <a href=\"http://localhost/MEGA-Website/home.php\"><div class=\"header_logo\"></div></a>
+    <a href=\"http://localhost/MEGA-Website/index.php\"><div class=\"header_logo\"></div></a>
     <nav class=\"mainMenu\">
-        <ul>
+        <ul id=\"custom2\">
             <li class=\"first\"><a href=\"http://localhost/MEGA-Website/phpBB3/viewforum.php?f=10\">News</a></li>
             <li class=\"second\"><a href=\"http://localhost/MEGA-Website/phpBB3/viewforum.php?f=3\">DAGD Tutorials</a></li>
-            <li class=\"first\"><a href=\"http://localhost/MEGA-Website/phpBB3/index.php\">Forums</a></li>
+            <li class=\"second\"><a href=\"http://localhost/MEGA-Website/phpBB3/index.php\">Forums</a></li>
             <li class=\"second\"><a href=\"http://localhost/MEGA-Website/phpBB3/viewforum.php?f=4\">Arcade</a></li>
             
         </ul>
     </nav>
 </hgroup>
-
 ";
     }
 

@@ -1,7 +1,8 @@
 /* Color List */
 /* #111     Black */
-/* #bd2121  Red */
+/* #ff3232  Red */
 /* #d88b28  Orange */
+/* #de5226  Dark Orange */
 /* #44a4ff  Light Blue */
 /* #0084ff  Dark Blue */
 /* #b100bc  Purple */
@@ -9,92 +10,103 @@
 
 
 /* ------------------------ Header -------------------------- */
-
+.navbar .inner.static .nav-tabs {
+    border-radius: 0px;
+    max-width: 1024px;
+    margin: auto;
+}
+#body-wrapper{
+    background: #222;
+}
+.solidBG{
+    background: #222;
+    
+}
+html{
+    background:#222 url("imgs/pattern4.png");
+    background-size: 379px;
+}
 body{
     margin:0 auto;
     padding:0;
     font-family: "Arial", sans-serif;
-    background:#bd2121;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    
+    
+    
     width:1024px;
 }
 div.header_logo{
-    background:#111 url("imgs/mega.png") no-repeat; 
-    margin:0 auto;
+    background:#111 url("imgs/mega-finl.png") no-repeat; 
+    margin:0 auto 0 auto;
     padding:0;
-    height:162px;
+    height:172px;
     color: aqua;
     
 }
 nav.mainMenu{
     display: block;
-    background:#bd2121;
+    /* background:#bd2121; */
     height:42px;
+    background:#222;
     padding:4px 0 14px 0;
 }
 nav.mainMenu ul{
     padding: 0;
-    margin:0 0 0 125px;
+    margin: auto 0 auto 0;
+    
     list-style-type: none;
 }
 nav.mainMenu ul li.first{
-    background: url(imgs/hex_Main.png);
-    transform: scaleY(-1);
-    display: inline-block;
+    background: #ff3232  ;/*url(imgs/hex_Main.png);*/
+    display: block;
+    float:left;
     text-align: center;
-    margin: 0 -29px;
+    margin:auto;    
+    font-size: 14px;
     line-height: 52px;
-    width: 251px;
+    width: 251.5px;
     height: 52px;
-    padding: 0;
+    padding: 0px;
+    
 }
 nav.mainMenu ul li.second{
-    background: url(imgs/hex_Main.png);
-    display: inline-block;
-    text-align: center;
-    margin: 0 -29px;
+    background: #ff3232  ;/*url(imgs/hex_Main.png);*/
+    text-decoration: none;
+    display: block;
+    float:left;
+    text-align: center;    
+    margin-left:6px;
+    font-size: 14px;
     line-height: 52px;
-    width: 251px;
+    width: 251.5px;
     height: 52px;
-    padding: 0;
+    padding: 0px;
 }
-nav.mainMenu ul li.third{
-    background: url(imgs/hex_log.png);
-    float: right;
-    display: inline-block;
-    text-align: center;
-    margin: 0 0 0 -29px;
-    line-height: 52px;
-    width: 304px;
-    height: 52px;
-    padding: 0;
-}
+
 
 
 nav.mainMenu ul li.first:hover{
-    background: url(imgs/hex_Main_hover.png);
+    /*background: url(imgs/hex_Main_hover.png);*/
+    background: #f0f0f0;
+    
 }
 nav.mainMenu ul li.second:hover{
-    background: url(imgs/hex_Main_hover.png);   
+    /*background: url(imgs/hex_Main_hover.png);*/
+    background: #f0f0f0;
+   
 }
-nav.mainMenu ul li.third:hover{
-    background: url(imgs/hex_log_hover.png);
-}
+
+
 
 
 
 nav.mainMenu ul li.first a{
     display: inline-block;
-    transform: scaleY(-1);
     text-decoration:none;
     padding: 0;
     margin: 0 31px;
     width:134px;
+    
     height:54px;
     line-height:54px;
     color: #f0f0f0;
@@ -105,37 +117,46 @@ nav.mainMenu ul li.second a{
     padding: 0;
     margin: 0 31px;
     width:134px;
-    height:54px;
-    line-height:54px;
-    color: #f0f0f0;
-}
-nav.mainMenu ul li.third a{
-    display: inline-block;
-    text-decoration:none;
-    padding: 0;
-    margin: 0 31px;
-    width:134px;
+    
     height:54px;
     line-height:54px;
     color: #f0f0f0;
 }
 
 nav.mainMenu ul li.first:hover a{
-    color:#111;
+    color: #ff3232;
 }
 nav.mainMenu ul li.second:hover a{
-    color:#111;  
-}
-nav.mainMenu ul li.third:hover a{
-    color:#111;
+    color: #ff3232;
 }
 
+
 /* ------------------------------ Body ------------------------- */
+.about-content{
+    
+    margin: 0;
+    background: #222;
+    margin-top: 0;
+    color:#ff3232;
+    
+}
+.about-content h1{
+    padding-left: 15px;
+    margin-top: 0;
+    padding-top: 20px;
+}
+.about-content p{
+    padding-left: 15px;
+    margin-bottom: auto;
+    padding-bottom: 50%;
+    color: #f0f0f0;
+}
+
 body{
     height:100%;
 }
 div.home_content{
-    background:#bd2121;
+    /*background:#bd2121;*/
     height:100%;
     width:1024px;
     padding:0;
@@ -145,7 +166,7 @@ div.home_content{
 body #canvas{
     margin: 0;
     padding: 0;
-    background: lime;
+    background: #111;
     display: block;
 }
 body div.home_content div.other_content{
@@ -171,8 +192,8 @@ body div.home_content div.other_content a div h1{
     position: absolute;
     display: block;
     width:510px;
-    font-size:60px;
-    color: #d88b28;
+    font-size:50px;
+    color: #ff3232 ;
     margin-top: 25px;
     
 }
@@ -182,15 +203,28 @@ body div.home_content div.other_content a div p{
     width:350px;
     margin:100px 0 0 75px;
     font-size:24px;
-    color:#d88b28;
+    color:#ff3232;
     
 }
+body div.home_content div.other_content .left_col:hover{
+    background: #f0f0f0;
+    
+}
+body div.home_content div.other_content #right_col:hover{
+    background: #f0f0f0;
+   
+}
+
 
 /* ----------------------------- Footer ----------------*/
+.copyright {
+    color: #BBB;
+}
 div.footer{
     background:#111;
     height:100px;
     text-align: center;
+    
 }
 div.footer div{
     /* position ferris logo */
@@ -212,13 +246,24 @@ div.footer ul li{
     padding: 0;
 }
 div.footer ul li a{
-    color: #bd2121;
+    color: #ff3232;
+    text-decoration:none;
 }
+div.footer ul li a:hover{
+    color: #f0f0f0;
+    text-decoration: underline;
+}
+
 div.footer a.contact{
     margin: 36px 30px;
+    text-decoration:none;
     font-size: 12px;
-    color: #bd2121;
+    color: #ff3232;
     float:right;
+}
+div.footer a.contact:hover{
+    color: #f0f0f0;
+    text-decoration: underline;
 }
 div.footer p{
     display: inline-block;

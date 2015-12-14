@@ -1213,7 +1213,7 @@ class phpbb_cache_container extends Symfony\Component\DependencyInjection\Contai
     {
         $this->services['dbal.conn.driver'] = $instance = new \phpbb\db\driver\mysqli();
 
-        $instance->sql_connect('localhost', 'gardeia', 'Bu!!d0g94', 'mega_forums', '', false, false);
+        $instance->sql_connect('localhost', 'root', 'root', 'mega_forums', '', false, false);
 
         return $instance;
     }
@@ -2607,8 +2607,8 @@ class phpbb_cache_container extends Symfony\Component\DependencyInjection\Contai
             'cache.driver.class' => 'phpbb\\cache\\driver\\file',
             'dbal.driver.class' => 'phpbb\\db\\driver\\mysqli',
             'dbal.dbhost' => 'localhost',
-            'dbal.dbuser' => 'gardeia',
-            'dbal.dbpasswd' => 'Bu!!d0g94',
+            'dbal.dbuser' => 'root',
+            'dbal.dbpasswd' => 'root',
             'dbal.dbname' => 'mega_forums',
             'dbal.dbport' => '',
             'dbal.new_link' => false,

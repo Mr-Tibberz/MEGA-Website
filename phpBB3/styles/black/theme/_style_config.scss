@@ -1,5 +1,5 @@
 // Configuration file
-$show-logo:								true;	// true or false
+$show-logo:								false;	// true or false
 $center-logo:							false;	// true or false
 $logo-block-padding:					0 20px 0 0;
 $responsive-hide-logo:					false;	// Hide logo on mobile devices. true or false
@@ -10,8 +10,8 @@ $profile-width:							150px;
 $profile-side:							left;	// left or right
 $post-margin:							($profile-width + 10px);
 
-$use-wrapper:							true;	// true or false
-$max-width:								none;	// Maximum width. Set to "none" to make layout fluid
+$use-wrapper:							false;	// true or false
+$max-width:								1024;	// Maximum width. Set to "none" to make layout fluid
 
 $split-forums:							true;	// Changes layout of forums list. Values are true or false
 
@@ -99,24 +99,24 @@ $bbcode-button-font-size:				$font-size + 1px;
 //
 
 // Absolute black and white colors. Reverse them for dark styles
-$black-color:							#fff;		// Main color to mix with. Black for light styles, white for dark styles
+$black-color:							#222;		// Main color to mix with. Black for light styles, white for dark styles
 $white-color:							#000;		// Opposite of $black-color
 
 // Page colors
-$page-background:						#181818;	// HTML element
+$page-background:						#222;	// HTML element
 $content-background:					#181818;	// Page inside content wrapper
 $content-border-color:					#181818;	// Border color for content wrapper
 
 // Primary colors
-$primary-color:							#4398ef;	// Main color, used for links and stuff
-$secondary-color:						#f04343;	// Secondary color, usually in red - yellow range
-$overlay-color:							#fff;	// Text on top of sections that use colorful background.
+$primary-color:							#ff3232;	// Main color, used for links and stuff
+$secondary-color:						#f0f0f0;	// Secondary color, usually in red - yellow range
+$overlay-color:							#f0f0f0;	// Text on top of sections that use colorful background.
 $block-background:						#383838;	// Background of blocks
-$block-background-reported:				#403030;	// Background for reported posts
+$block-background-reported:				#9C0000;	// Background for reported posts
 
 // Global color values
 $text-color:							#bbb;	// Text color
-$bold-text-color:						$black-color;	// Text color with higher contrast to background. #000 or #fff
+$bold-text-color:						#f0f0f0;	// Text color with higher contrast to background. #000 or #fff
 $post-text-color:						$text-color;	// Text inside posts
 $link-color:							$primary-color;	// Links
 $link-hover-color:						$secondary-color;	// Links, hover state
@@ -136,7 +136,7 @@ $block-background2:						#343434;	// Blocks with .bg2 background color
 $block-background3:						#303030;	// Blocks with .bg3 background color - mostly UCP/MCP and posting form
 
 $block-border:							#202020;	// Border color for blocks
-$border-radius:							5px;		// Main border radius
+$border-radius:							0px;		// Main border radius
 $block-top-border:						lighten($block-background, 5%);	// Top border of forums in forums list
 $block-bottom-border:					darken($block-background, 10%);		// Bottom border of forums in forums list
 $block-inner-border:					$block-bottom-border;	// Border inside blocks where there is only 1 border instead of top/bottom borders
@@ -147,27 +147,27 @@ $block-title-color:						desaturate($link-color, 5%);	// Title inside blocks, su
 $tab-color:								desaturate($link-color, 20%);
 $tab-background:						$block-background;
 
-$tab-hover-color:						$link-hover-color;
-$tab-hover-background:					$block-background3;
+$tab-hover-color:						$primary-color;
+$tab-hover-background:					$secondary-color;
 
-$tab-selected-color:					mix($text-color, $block-background3, 90%);
-$tab-selected-background:				$block-background3;
+$tab-selected-color:					$secondary-color;
+$tab-selected-background:				$primary-color;
 
 // Header
 $header-bg:								$content-background;
 $header-text:							#fff;
 $header-link:							$overlay-color;
-$header-link-hover:						mix($header-link, $header-bg, 80%);
+$header-link-hover:						#f0f0f0;
 
 // Primary navigation
-$primary-nav-bg:						desaturate(darken($primary-color, 35%), 25%);
+$primary-nav-bg:						$primary-color;
 $primary-nav-color:						$overlay-color;
 
-$primary-nav-selected-bg:				mix($primary-nav-bg, $content-background, 20%);
+$primary-nav-selected-bg:				#f0f0f0;
 $primary-nav-selected-color:			$primary-color;
 
-$primary-nav-hover-bg:					desaturate(darken($primary-color, 25%), 20%);
-$primary-nav-hover-color:				$overlay-color;
+$primary-nav-hover-bg:					#f0f0f0;
+$primary-nav-hover-color:				$primary-color;
 
 $primary-nav-alert-bg:					$secondary-color;
 $primary-nav-alert-color:				$overlay-color;
@@ -191,7 +191,7 @@ $dropdown-heading-link-hover-color:		$overlay-color;
 
 $forum-description-color:				#fff;
 $forum-description-bg:					darken(desaturate($primary-color, 25%), 10%);
-$forum-description-gradient-start:		rgba(255, 255, 255, .1);
+$forum-description-gradient-start:		rgba(255, 255, 255, 0);
 $forum-description-gradient-end:		rgba(255, 255, 255, 0);
 
 // Notifications
@@ -216,11 +216,11 @@ $content-bottom-border:					darken($content-background, 10%);
 $content-inner-border:					$content-bottom-border;
 
 // Heading section
-$heading-bg:							desaturate(darken($primary-color, 35%), 25%);
+$heading-bg:							$primary-color;
 $heading-border:						$heading-bg;
 $heading-color:							$overlay-color;
 $heading-link:							$overlay-color;
-$heading-link-hover:					mix($heading-link, $heading-bg, 80%);
+$heading-link-hover:					#f0f0f0;
 
 // Inputs
 $input-text:							$text-color;	// Input text color
@@ -232,18 +232,18 @@ $input-hover-border:					$secondary-color;
 $input-focus-text:						$bold-text-color;
 $input-focus-bg:						$input-bg;
 $input-focus-border:					$primary-color;
-$input-border-radius:					2px;
+$input-border-radius:					0px;
 
 $search-box-border:						desaturate(darken($primary-color, 35%), 25%);	// Border for search box block
 $search-box-border-header:				desaturate(darken($primary-color, 35%), 25%);		// Same as above, for search box in header
 $search-box-shadow:						1px 1px 3px rgba(0, 0, 0, .1);	// Box-shadow for search box in header
 
 // Buttons
-$button-bg:								desaturate(darken($primary-color, 35%), 25%);
-$button-border-radius:					3px;
+$button-bg:								$primary-color;
+$button-border-radius:					0px;
 $button-border:							$button-bg;
-$button-icon:							#d0d0d0;
-$button-icon-hover:						#fff;
+$button-icon:							#f0f0f0;
+$button-icon-hover:						#f0f0f0;
 $button-text:							$text-color;
 
 $button-top-padding:					2px;
@@ -251,10 +251,10 @@ $button-side-padding:					8px;
 $button-border-width:					1px;
 $button-height:							$button-line-height + ($button-top-padding + $button-border-width) * 2;
 
-$big-button-border-radius:				4px;	// For big buttons and blocks like quick search
+$big-button-border-radius:				0px;	// For big buttons and blocks like quick search
 
 // BBCode
-$bbcode-border-radius:					3px;
+$bbcode-border-radius:					0px;
 $bbcode-background:						#181818;
 $bbcode-background2:					#282828;
 $bbcode-outer-border:					if($light, darken($bbcode-background, 7%), lighten($bbcode-background, 4%));
@@ -276,9 +276,9 @@ $post-side:								if($profile-side == left, right, left);
 	border: 0 solid $block-border;
 	border-radius: $border-radius;
 	padding: 5px 10px;
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, 0) 100%);
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, 0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#30000000, endColorstr=#00000000);
+	//background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, 0) 100%);
+	//background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, 0) 100%);
+	//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#30000000, endColorstr=#00000000);
 }
 
 @mixin section-forum {
@@ -292,7 +292,7 @@ $post-side:								if($profile-side == left, right, left);
 	border-width: 0;
 	border-radius: 0;
 	box-shadow: none;
-	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	//filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 	padding: 0;
 }
 
@@ -312,9 +312,9 @@ $post-side:								if($profile-side == left, right, left);
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 
 	background: $heading-bg url('./images/category.png') 0 0 repeat-x;
-	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#18FFFFFF, endColorstr=#00FFFFFF);
+	//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
+	//background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
+	//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#18FFFFFF, endColorstr=#00FFFFFF);
 
 	@if $border-radius > 1px {
 		@media (max-width: 700px) {
@@ -350,7 +350,7 @@ $post-side:								if($profile-side == left, right, left);
 	color: $stats-title-color;
 	box-shadow: none;
 	background-image: none;
-	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	//filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 	a {
 		color: $link-color;
 		&:hover {
@@ -363,9 +363,9 @@ $post-side:								if($profile-side == left, right, left);
 	background: $heading-bg;
 	border: 0 solid $heading-border;
 	color: $heading-color;
-	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .2) 0, rgba(255, 255, 255, 0) 100%);
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .2) 0, rgba(255, 255, 255, 0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#30FFFFFF, endColorstr=#00FFFFFF);
+	//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .2) 0, rgba(255, 255, 255, 0) 100%);
+	//background-image: linear-gradient(to bottom, rgba(255, 255, 255, .2) 0, rgba(255, 255, 255, 0) 100%);
+	//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#30FFFFFF, endColorstr=#00FFFFFF);
 	box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2);
 
 	@if $border-radius > 1px {
@@ -380,7 +380,7 @@ $post-side:								if($profile-side == left, right, left);
 
 @mixin table-heading-transparent {
 	background: transparent;
-	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	//filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 	box-shadow: none;
 	color: inherit;
 }

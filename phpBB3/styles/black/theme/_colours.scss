@@ -90,8 +90,8 @@ hr {
 @if $use-wrapper {
 	#body-wrapper {
 		background: desaturate(darken($primary-color, 37%), 28%) url("./images/pattern.png");
-		background: -webkit-linear-gradient(top, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, 0) 400px), desaturate(darken($primary-color, 37%), 28%) url("./images/pattern.png");
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, 0) 400px), desaturate(darken($primary-color, 37%), 28%) url("./images/pattern.png");
+		//background: -webkit-linear-gradient(top, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, 0) 400px), desaturate(darken($primary-color, 37%), 28%) url("./images/pattern.png");
+		//background: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, 0) 400px), desaturate(darken($primary-color, 37%), 28%) url("./images/pattern.png");
 		border-bottom-color: rgba(darken($primary-color, 20%), .2);
 	}
 }
@@ -113,8 +113,8 @@ hr {
 }
 
 .navbar {
-	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
+	//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
+	//background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#30000000, endColorstr=#00000000);
 	&.secondary {
 		color: $link-color;
@@ -131,26 +131,26 @@ hr {
 
 	.nav-tabs {
 		background: $primary-nav-bg url('./images/category.png') 0 0 repeat-x;
-		background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
-		background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#18FFFFFF, endColorstr=#00FFFFFF);
+		//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
+		//background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
+		//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#18FFFFFF, endColorstr=#00FFFFFF);
 
 		.tab {
 			color: $primary-nav-color;
 			&.selected {
 				color: $primary-nav-selected-color;
 				background: $primary-nav-selected-bg url('./images/category.png') 0 0 repeat-x;
-				background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .05) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
-				background-image: linear-gradient(to bottom, rgba(255, 255, 255, .05) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
-				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0AFFFFFF, endColorstr=#00FFFFFF);
+				//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .05) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
+				//background-image: linear-gradient(to bottom, rgba(255, 255, 255, .05) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
+				//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0AFFFFFF, endColorstr=#00FFFFFF);
 			}
 			&:hover,
 			&.dropdown-visible {
 				color: $primary-nav-hover-color;
 				background: $primary-nav-hover-bg url('./images/category.png') 0 0 repeat-x;
-				background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
-				background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
-				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#18FFFFFF, endColorstr=#00FFFFFF);
+				//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
+				//background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
+				//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#18FFFFFF, endColorstr=#00FFFFFF);
 			}
 			& > strong {
 				color: $primary-nav-alert-color;
@@ -174,32 +174,32 @@ hr {
 					// Tabs layout
 					color: $link-color;
 					background-color: $block-background;
-					background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
-					background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
-					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#18FFFFFF, endColorstr=#00FFFFFF);
+					//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
+					//background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
+					//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#18FFFFFF, endColorstr=#00FFFFFF);
 
 					&.selected {
 						background-color: $block-background;
 						color: $link-color;
-						background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .15) 0, rgba(255, 255, 255, .1) 100%);
-						background-image: linear-gradient(to bottom, rgba(255, 255, 255, .15) 0, rgba(255, 255, 255, .1) 100%);
-						filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#20FFFFFF, endColorstr=#18FFFFFF);
+						//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .15) 0, rgba(255, 255, 255, .1) 100%);
+						//background-image: linear-gradient(to bottom, rgba(255, 255, 255, .15) 0, rgba(255, 255, 255, .1) 100%);
+						//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#20FFFFFF, endColorstr=#18FFFFFF);
 					}
 
 					&:hover {
 						color: $primary-nav-hover-color;
 						background: $primary-nav-hover-bg url('./images/category.png') 0 0 repeat-x;
-						background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
-						background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
-						filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#18FFFFFF, endColorstr=#00FFFFFF);
+						//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
+						//background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
+						//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#18FFFFFF, endColorstr=#00FFFFFF);
 					}
 
 					&.dropdown-visible {
 						color: $primary-nav-hover-color;
 						background: $primary-nav-hover-bg url('./images/category.png') 0 0 repeat-x;
-						background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
-						background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
-						filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#18FFFFFF, endColorstr=#00FFFFFF);
+						//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
+						//background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%), url('./images/category.png');
+						//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#18FFFFFF, endColorstr=#00FFFFFF);
 					}
 				}
 			}
@@ -209,8 +209,8 @@ hr {
 				background: $block-background;
 				color: $link-color;
 				background-color: $block-background;
-				background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
-				background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
+				//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
+				//background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
 
 				> ul > li:hover,
 				> ul > li.dropdown-visible {
@@ -219,7 +219,7 @@ hr {
 					}
 					background: none;
 					box-shadow: none;
-					filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+					//filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 				}
 			}
 		}
@@ -262,8 +262,8 @@ table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
 		background-color: rgba($content-background, .3);
 		border-top-color: $tab-selected-background;
 		&:before, &:after {
-			background: -webkit-linear-gradient(to bottom, $tab-selected-background 0%, rgba($tab-selected-background, 0) 100%);
-			background: linear-gradient(to bottom, $tab-selected-background 0%, rgba($tab-selected-background, 0) 100%);
+			//background: -webkit-linear-gradient(to bottom, $tab-selected-background 0%, rgba($tab-selected-background, 0) 100%);
+			//background: linear-gradient(to bottom, $tab-selected-background 0%, rgba($tab-selected-background, 0) 100%);
 		}
 	}
 	.section-posting &.panel {
@@ -297,9 +297,9 @@ ul.navlinks {
 .forum-description.toggle {
 	color: $forum-description-color;
 	background-color: fade-out($forum-description-bg, .2);
-	background-image: -webkit-linear-gradient(top, $forum-description-gradient-start 0, $forum-description-gradient-end 100%);
-	background-image: linear-gradient(to bottom, $forum-description-gradient-start 0, $forum-description-gradient-end 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($forum-description-gradient-start)}', endColorstr='#{ie-hex-str($forum-description-gradient-end)}');
+	//background-image: -webkit-linear-gradient(top, $forum-description-gradient-start 0, $forum-description-gradient-end 100%);
+	//background-image: linear-gradient(to bottom, $forum-description-gradient-start 0, $forum-description-gradient-end 100%);
+	//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($forum-description-gradient-start)}', endColorstr='#{ie-hex-str($forum-description-gradient-end)}');
 	a {
 		color: inherit !important;
 	}
@@ -383,16 +383,16 @@ dl.details dd {
 	color: $overlay-color;
 	background-color: $primary-color;
 	border-color: $primary-color;
-	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+	//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+	//background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
 }
 
 .pagination li a:hover, .pagination .dropdown-visible a.dropdown-trigger, .nojs .pagination .dropdown-container:hover a.dropdown-trigger {
 	border-color: $link-hover-color;
 	background-color: $link-hover-color;
 	color: $overlay-color;
-	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+	//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+	//background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
 }
 
 .pagination li.page-jump a:after {
@@ -717,35 +717,35 @@ fieldset.polls dd div {
 }
 
 %pollbar {
-	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#1AFFFFFF, endColorstr=#00FFFFFF);
+	//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
+	//background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
+	//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#1AFFFFFF, endColorstr=#00FFFFFF);
 	box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
 }
 
 .pollbar1 {
 	@extend %pollbar;
-	background-color: desaturate(darken($secondary-color, 25%), 30%);
+	background-color: $primary-color;
 }
 
 .pollbar2 {
 	@extend %pollbar;
-	background-color: desaturate(darken($secondary-color, 25%), 25%);
+	background-color: $primary-color;
 }
 
 .pollbar3 {
 	@extend %pollbar;
-	background-color: desaturate(darken($secondary-color, 25%), 20%);
+	background-color: $primary-color;
 }
 
 .pollbar4 {
 	@extend %pollbar;
-	background-color: desaturate(darken($secondary-color, 25%), 10%);
+	background-color: $primary-color;
 }
 
 .pollbar5 {
 	@extend %pollbar;
-	background-color: darken($secondary-color, 25%);
+	background-color: $primary-color;
 }
 
 // Poster profile block
@@ -791,10 +791,10 @@ dd.profile-warnings {
 	&, .buttons > &.locked-icon {
 		border-color: $button-border;
 		background-color: $button-bg;
-		background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 0) 100%);
-		background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 0) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#1AFFFFFF, endColorstr=#00FFFFFF);
-		color: mix(#fff, $button-bg, 80%);
+		//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 0) 100%);
+		//background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 0) 100%);
+		//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#1AFFFFFF, endColorstr=#00FFFFFF);
+		color: $secondary-color;
 		box-shadow: none;
 	}
 
@@ -817,13 +817,13 @@ dd.profile-warnings {
 	}
 
 	.buttons > &, &.report-icon, &.delete-icon {
-		border-color: desaturate(darken($primary-color, 35%), 25%);
-		background-color: desaturate(darken($primary-color, 35%), 25%);
-		background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
-		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#30FFFFFF, endColorstr=#00FFFFFF);
+		border-color: $primary-color;
+		background-color: $primary-color;
+		//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+		//background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+		//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#30FFFFFF, endColorstr=#00FFFFFF);
 		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15), 1px 1px 1px rgba(255, 255, 255, 0.1) inset;
-		color: $overlay-color;
+		color: $secondary-color;
 
 		&:after, &:before {
 			color: mix($overlay-color, $primary-color, 85%) !important;
@@ -833,12 +833,12 @@ dd.profile-warnings {
 		}
 	}
 	&.report-icon, &.delete-icon {
-		border-color: desaturate(darken($secondary-color, 25%), 15%);
-		background-color: desaturate(darken($secondary-color, 25%), 15%);
+		border-color: $primary-color;
+		background-color: $primary-color;
 		box-shadow: none;
 
 		&:after, &:before {
-			color: $overlay-color !important;
+			color: $secondary-color !important;
 		}
 	}
 }
@@ -863,15 +863,15 @@ dd.profile-warnings {
 .dropdown-visible .dropdown-select, .dropdown-visible .dropdown-select:hover, .nojs .dropdown-container:hover .dropdown-select,
 .buttons > .button:hover,
 .button:hover, .dropdown-visible .dropdown-select, .nojs .dropdown-container:hover .dropdown-select {
-	border-color: desaturate(darken($secondary-color, 25%), 15%) !important;
-	background-color: desaturate(darken($secondary-color, 25%), 15%);
-	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#26FFFFFF, endColorstr=#00FFFFFF);
-	color: $overlay-color;
+	border-color: $secondary-color;
+	background-color: $secondary-color;
+	//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+	//background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+	//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#26FFFFFF, endColorstr=#00FFFFFF);
+	color: $primary-color;
 
 	&:after, &:before {
-		color: $overlay-color !important;
+		color: $primary-color !important;
 	}
 }
 
@@ -1092,10 +1092,10 @@ ul.cplist {
 #tabs .activetab > a,
 #tabs .activetab > a:hover {
 	background: $tab-selected-background;
-	background: -webkit-linear-gradient(top, $tab-background 0%, $tab-selected-background 100%);
-	background: linear-gradient(to bottom, $tab-background 0%, $tab-selected-background 100%);
-	box-shadow: 0 10px 10px -10px $tab-selected-background;
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{ie-hex-str($tab-background)}', endColorstr='#{ie-hex-str($tab-selected-background)}', GradientType=0 );
+	//background: -webkit-linear-gradient(top, $tab-background 0%, $tab-selected-background 100%);
+	//background: linear-gradient(to bottom, $tab-background 0%, $tab-selected-background 100%);
+	//box-shadow: 0 10px 10px -10px $tab-selected-background;
+	//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{ie-hex-str($tab-background)}', endColorstr='#{ie-hex-str($tab-selected-background)}', GradientType=0 );
 	border-color: $tab-selected-background;
 	color: $tab-selected-color;
 }
@@ -1126,36 +1126,36 @@ ul.cplist {
 
 // Link styles for the sub-section links
 #navigation a {
-	color: $text-color;
+	color: $link-color;
 	background: $block-background;
-	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#1AFFFFFF, endColorstr=#00FFFFFF);
+	//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
+	//background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
+	//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#1AFFFFFF, endColorstr=#00FFFFFF);
 	box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .1);
 }
 
 #navigation a:hover {
-	background-color: desaturate(darken($secondary-color, 25%), 15%);
-	color: $overlay-color;
-	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .1) 100%);
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#18FFFFFF);
+	background-color: $secondary-color;
+	color: $primary-color;
+	//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .1) 100%);
+	//background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .1) 100%);
+	//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#18FFFFFF);
 }
 
 #navigation #active-subsection a {
-	background: desaturate(darken($primary-color, 35%), 25%);
-	color: $overlay-color;
-	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#1AFFFFFF, endColorstr=#00FFFFFF);
+	background: $primary-color;
+	color: $secondary-color;
+	//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
+	//background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
+	//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#1AFFFFFF, endColorstr=#00FFFFFF);
 }
 
 #navigation #active-subsection a:hover {
-	background-color: desaturate(darken($secondary-color, 25%), 15%);
-	color: $overlay-color;
-	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .1) 100%);
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#18FFFFFF);
+	background-color: $primary-color;
+	color: $secondary-color;
+	//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .1) 100%);
+	//background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .1) 100%);
+	//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#18FFFFFF);
 }
 
 #navigation > hr {
@@ -1334,23 +1334,23 @@ fieldset.quick-login input.inputbox {
 // ----------------------------------------
 
 a.button1, input.button1, input.button3, a.button2, input.button2 {
-	color: $button-text;
+	color: $secondary-color;
 	border-color: $button-border;
 	background-color: $button-bg;
-	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .2) 0, rgba(255, 255, 255, 0) 100%);
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .2) 0, rgba(255, 255, 255, 0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#30FFFFFF, endColorstr=#00FFFFFF);
+	//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .2) 0, rgba(255, 255, 255, 0) 100%);
+	//background-image: linear-gradient(to bottom, rgba(255, 255, 255, .2) 0, rgba(255, 255, 255, 0) 100%);
+	//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#30FFFFFF, endColorstr=#00FFFFFF);
 }
 
 a.button1, input.button1 {
 	background-color: lighten($button-bg, 5%);
 	border-color: lighten($button-border, 5%);
-	color: $overlay-color;
+	color: $secondary-color;
 }
 
 input.button3 {
 	background-image: none;
-	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	//filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
 // Alternative button
@@ -1359,17 +1359,17 @@ a.button2, input.button2, input.button3 {
 
 // <a> button in the style of the form buttons
 a.button1, a.button2 {
-	color: $button-text;
+	color: $secondary-color;
 }
 
 // Hover states
 a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
-	background-color: desaturate(darken($secondary-color, 25%), 15%);
-	border-color: desaturate(darken($secondary-color, 25%), 15%);
-	color: $overlay-color;
-	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#18FFFFFF, endColorstr=#00FFFFFF);
+	background-color: $secondary-color;
+	border-color: $secondary-color;
+	color: $primary-color;
+	//background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
+	//background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, 0) 100%);
+	//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#18FFFFFF, endColorstr=#00FFFFFF);
 }
 
 // Focus states
